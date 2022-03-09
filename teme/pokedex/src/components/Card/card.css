@@ -1,0 +1,76 @@
+.cardContainer {
+  align-items: center;
+  border-radius: 15px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px;
+  width: 275px;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: capitalize;
+  width: 85%;
+}
+
+.cardBody {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 90%;
+}
+
+.pokemonPhoto img {
+  width: 130px;
+  height: 130px;
+}
+
+.pokemonType {
+  width: 80px;
+  padding: 7px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+
+  background-color: #8c898f;
+
+  color: #fff;
+  text-align: center;
+  text-transform: capitalize;
+  filter: brightness(0.9);
+}
+
+.rock {
+  background-color: rgb(148, 81, 81);
+}
+.ghost {
+  background-color: rgb(247, 247, 247);
+}
+.electric {
+  background-color: #f9d030;
+}
+.bug {
+  background-color: #f6d6a7;
+}
+.poison {
+  background-color: #e0a7f6;
+}
+.normal {
+  background-color: #a7a877;
+}
+.fairy {
+  background-color: rgba(255, 192, 203, 0.863);
+}
+.fire {
+  background-color: #f08030;
+}
+.grass {
+  background-color: #78c84f;
+}
+.water {
+  background-color: #6890f0;
+}
