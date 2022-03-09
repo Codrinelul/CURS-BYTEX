@@ -3,10 +3,11 @@ import Card from './components/Card/Card';
 
 
 
+
 function App() {
   const [allPokemons, setAllPokemons] = useState([])
   const [loadMore, setLoadMore] = useState('https://pokeapi.co/api/v2/pokemon?limit=20')
-
+  const [searchTerm, setSearchTerm] = useState("")
   const getAllPokemons = async () => {
     const res = await fetch(loadMore)
     const data = await res.json()
@@ -31,17 +32,29 @@ function App() {
   return (
     <div className="App">
       <div className='appContainer'>
-        <h1 className='appHeader'>Pokedex</h1>
+        <div className='appHeader '>
+          <h1 className='pokedexTitle'>Pokedex</h1>
+          <input placeholder="Search pokemon name, number or type..." maxlength="33" class="searchBar" onChange={(event) => {
+            setSearchTerm(event.target.value);
+          }} />
+        </div>
         <div className="pokemonContainer">
 
-          {allPokemons.map((pokemonStats, index) =>
+          {allPokemons.filter((pokemonStats) => {
+            if (searchTerm == "") {
+              return pokemonStats
+            } else if (pokemonStats.name.toLowerCase().includes(searchTerm.toLowerCase())) {
+              return pokemonStats
+            }
+          }).map((pokemonStats, key) =>
             <Card
-              key={index}
+              key={key}
               id={pokemonStats.id}
               image={pokemonStats.sprites.front_default}
               name={pokemonStats.name}
               type={pokemonStats.types[0].type.name}
-            // typeTwo={pokemonStats.types[0].type.name}
+            // typeTwo={pokemonStats.types[1].type.name}
+            // am eroarea asta aici!!!
             />)}
 
         </div>
