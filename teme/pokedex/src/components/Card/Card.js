@@ -20,9 +20,9 @@ const Card = ({ id, image, name, type, typeTwo, _callback }) => {
                         <div className={`pokemonType ${style}`} >
                             {type}
                         </div>
-                        {/* <div className={`pokemonType ${style}`} >
+                        <div className={`pokemonType ${style}`} >
                             {typeTwo}
-                        </div> */}
+                        </div>
                     </div>
                     <div className="pokemonPhoto">
                         <img src={image} alt={name} />
