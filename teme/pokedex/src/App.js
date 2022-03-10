@@ -6,7 +6,8 @@ import Card from './components/Card/Card';
 
 function App() {
   const [allPokemons, setAllPokemons] = useState([])
-  const [loadMore, setLoadMore] = useState('https://pokeapi.co/api/v2/pokemon?limit=20')
+  const [loadMore, setLoadMore] = useState('https://pokeapi.co/api/v2/pokemon?limit=1000')
+  //limit=10000 pentru tori pokemonii
   const [searchTerm, setSearchTerm] = useState("")
   const getAllPokemons = async () => {
     const res = await fetch(loadMore)
@@ -19,7 +20,7 @@ function App() {
         const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon.name}`)
         const data = await res.json()
         setAllPokemons(currentList => [...currentList, data])
-
+        await allPokemons.sort((a, b) => a.id - b.id)
       })
     }
     createPokemonObject(data.results)
@@ -51,6 +52,7 @@ function App() {
               key={key}
               id={pokemonStats.id}
               image={pokemonStats.sprites.front_default}
+              // image={pokemonStats.sprites.other.official-artwork.front_default}  IAR AICI NU POT SA FOLOSESC official-artwork pentru ca hypenul ala stica cv
               name={pokemonStats.name}
               type={pokemonStats.types[0].type.name}
             // typeTwo={pokemonStats.types[1].type.name}
@@ -58,6 +60,7 @@ function App() {
             />)}
 
         </div>
+        <button className="loadMore" onClick={() => getAllPokemons()}>Load More</button>
       </div>
     </div>
   );

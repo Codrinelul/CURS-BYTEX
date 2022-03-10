@@ -5,7 +5,7 @@ import "./card.css";
 
 const Card = ({ id, image, name, type, typeTwo, _callback }) => {
     const style = type + " card";
-
+    const styleTwo = typeTwo + " card";
     return (
         <div className="pokemonContainer" >
 
@@ -20,7 +20,7 @@ const Card = ({ id, image, name, type, typeTwo, _callback }) => {
                         <div className={`pokemonType ${style}`} >
                             {type}
                         </div>
-                        <div className={`pokemonType ${style}`} >
+                        <div className={`pokemonType ${styleTwo}`} >
                             {typeTwo}
                         </div>
                     </div>

@@ -15,14 +15,12 @@ code {
 }
 
 .App {
+  align-items: flex-start;
+  background-color: #fff7e8;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-
-  width: 100vw;
   min-height: 100vh;
-
-  background-color: #fff7e8;
+  width: 100vw;
 }
 
 .appContainer {
@@ -56,4 +54,62 @@ code {
 .pokedexTitle {
   color: #042440;
   padding: 20px 0;
+}
+
+.loadMore {
+  width: 150px;
+  padding: 7px;
+  margin: auto;
+  border-radius: 5px;
+  display: flex;
+  background-color: #8c898f;
+
+  color: #fff;
+  text-align: center;
+  justify-content: center;
+}
+
+/* CSS */
+.loadMore {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #8c898f;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: auto;
+  min-height: 3rem;
+  padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: 150px;
+}
+
+.loadMore:hover,
+.loadMore:focus {
+  background-color: #fb8332;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.loadMore:hover {
+  transform: translateY(-1px);
+}
+
+.loadMore:active {
+  background-color: #c85000;
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  transform: translateY(0);
 }
