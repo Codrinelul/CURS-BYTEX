@@ -3,7 +3,7 @@ import React from 'react';
 import "./card.css";
 
 
-const Card = ({ id, image, name, type, typeTwo, _callback }) => {
+const Card = ({ id, image, name, type, typeTwo }) => {
     const style = type + " card";
     const styleTwo = typeTwo + " card";
     return (
