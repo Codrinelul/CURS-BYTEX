@@ -6,7 +6,7 @@ import Card from './components/Card/Card';
 
 function App() {
   const [allPokemons, setAllPokemons] = useState([])
-  const [loadMore, setLoadMore] = useState('https://pokeapi.co/api/v2/pokemon?limit=1000')
+  const [loadMore, setLoadMore] = useState('https://pokeapi.co/api/v2/pokemon?limit=100')
   //limit=10000 pentru tori pokemonii
   const [searchTerm, setSearchTerm] = useState("")
   const getAllPokemons = async () => {
