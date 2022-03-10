@@ -24,7 +24,7 @@ code {
 }
 
 .appContainer {
-  width: 1080px;
+  width: 1112px;
 }
 
 .appHeader {
@@ -36,6 +36,7 @@ code {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  padding: 20px;
 }
 
 .searchBar {

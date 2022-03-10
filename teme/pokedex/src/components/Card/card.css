@@ -1,12 +1,14 @@
 .cardContainer {
-  align-items: center;
-  border-radius: 15px;
-  color: #fff;
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  width: 245px;
   margin: 20px;
-  width: 275px;
+  border-radius: 15px;
+  height: 181px;
+  color: #fff;
 }
 
 .cardHeader {
