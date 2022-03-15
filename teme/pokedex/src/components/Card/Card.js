@@ -21,7 +21,7 @@ const Card = ({ id, image, name, type, typeTwo }) => {
                         {type}
                     </div>
                     <div className={`pokemonType ${styleTwo}`} >
-                        {typeTwo}
+                        ceva
                     </div>
                 </div>
                 <div className="pokemonPhoto">

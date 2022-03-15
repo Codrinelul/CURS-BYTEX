@@ -27,7 +27,7 @@ function App() {
   }
   console.log(allPokemons);
   useEffect(() => {
-    getAllPokemons()
+    // getAllPokemons()
   }, [])
 
   return (
@@ -42,7 +42,7 @@ function App() {
         <div className="pokemonContainer">
 
           {allPokemons.filter((pokemonStats) => {
-            if (searchTerm == "") {
+            if (searchTerm === "") {
               return pokemonStats
             } else if (pokemonStats.name.toLowerCase().includes(searchTerm.toLowerCase())) {
               return pokemonStats
@@ -51,11 +51,10 @@ function App() {
             <Card
               key={key}
               id={pokemonStats.id}
-              image={pokemonStats.sprites.front_default}
-              // image={pokemonStats.sprites.other.official-artwork.front_default}  IAR AICI NU POT SA FOLOSESC official-artwork pentru ca hypenul ala stica cv
+              image={pokemonStats.sprites.other["official-artwork"].front_default}
               name={pokemonStats.name}
               type={pokemonStats.types[0].type.name}
-            // typeTwo={pokemonStats.types[1].type.name}
+            // typeTwo={ }
             // am eroarea asta aici!!!
             />)}
 
