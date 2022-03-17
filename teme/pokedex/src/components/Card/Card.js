@@ -1,29 +1,21 @@
 import React from 'react';
-
+import Types from "../types/types"
 import "./card.css";
 
 
 const Card = ({ id, image, name, type, typeTwo }) => {
     const style = type + " card";
-    const styleTwo = typeTwo + " card";
     return (
 
 
-        <div className={`cardContainer ${style}`}>
+        <div className={` other cardContainer ${style}`}>
 
             <div className="cardHeader">
                 <h3>{name}</h3>
                 <h4>#0{id}</h4>
             </div>
             <div className="cardBody">
-                <div className="pokemonTypesContainer">
-                    <div className={`pokemonType ${style}`} >
-                        {type}
-                    </div>
-                    <div className={`pokemonType ${styleTwo}`} >
-                        ceva
-                    </div>
-                </div>
+                <Types type={type} />
                 <div className="pokemonPhoto">
                     <img src={image} alt={name} />
                 </div>

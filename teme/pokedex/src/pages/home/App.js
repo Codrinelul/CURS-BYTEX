@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react'
-import Card from './components/Card/Card';
-
-
+import Card from '../../components/Card/Card';
+import "./App.css"
+import PokemonPage from '../pokemonPage/PokemonPage';
 
 
 function App() {
   const [allPokemons, setAllPokemons] = useState([])
-  const [loadMore, setLoadMore] = useState('https://pokeapi.co/api/v2/pokemon?limit=100')
+  const [loadMore, setLoadMore] = useState('https://pokeapi.co/api/v2/pokemon?limit=1')
   //limit=10000 pentru tori pokemonii
   const [searchTerm, setSearchTerm] = useState("")
   const getAllPokemons = async () => {
@@ -27,7 +27,7 @@ function App() {
   }
   console.log(allPokemons);
   useEffect(() => {
-    // getAllPokemons()
+    getAllPokemons()
   }, [])
 
   return (
@@ -39,6 +39,7 @@ function App() {
             setSearchTerm(event.target.value);
           }} />
         </div>
+        <PokemonPage />
         <div className="pokemonContainer">
 
           {allPokemons.filter((pokemonStats) => {
@@ -51,7 +52,7 @@ function App() {
             <Card
               key={key}
               id={pokemonStats.id}
-              image={pokemonStats.sprites.other["official-artwork"].front_default}
+              image={pokemonStats.sprites.front_default}
               name={pokemonStats.name}
               type={pokemonStats.types[0].type.name}
             // typeTwo={ }
