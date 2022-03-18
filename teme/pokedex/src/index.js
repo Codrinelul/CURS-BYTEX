@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import "./index.css";
 import "./shared/colors.css";
-import App from './pages/home/App';
+import App from './App';
 
 
 ReactDOM.render(

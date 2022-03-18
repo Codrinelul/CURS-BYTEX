@@ -1,7 +1,7 @@
 import React from "react";
 import "./PrincipalPokemonCard.css"
 
-const CardContainer = () => {
+const CardContainer = ({ id, image, name, type, }) => {
 
     return (
         <div class="card-container">
@@ -9,16 +9,16 @@ const CardContainer = () => {
                 <div class="pokemon-artwork-card-header">
                     <span class="pokemon-id-info">
                         <div class="pokemon-name">
-                            Ivysaur
+                            {name}
                         </div>
                         <div class="pokemon-id">
-                            #002
+                            #0{id}
                         </div>
                     </span>
                     <span class="pokemon-types-container">
                         <span class="type-card-container">
 
-                            Grass
+                            {type}
                         </span>
                         <span class="type-card-container">
 
@@ -26,7 +26,7 @@ const CardContainer = () => {
                         </span>
                     </span>
                 </div>
-                <img class="pokemon-artwork" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/2.png" alt="Pokemon" />
+                <img class="pokemon-artwork" src={image} alt={name} />
                 <div class="pokemon-info-container">
                     <span class="pokemon-info-block">
                         <div class="pokemon-info-header">
