@@ -17,7 +17,7 @@ function App() {
 
                         <Route exact path='/' element={<Home />} />
                         <Route path='/pokemon/:id' element={<PokemonPage />} />
-
+                        {/* am o problema cand incerc sa afisez pokemonPage nu o afiseaza */}
                     </Routes>
 
                 </div >

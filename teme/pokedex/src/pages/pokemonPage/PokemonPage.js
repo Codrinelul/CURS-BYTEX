@@ -5,12 +5,14 @@ import PokemonTriviaContainer from "../../components/PokemonTriviaContainer/Poke
 import SpritesContainer from "../../components/SpritesContainer/SpritesContainer";
 import axios from 'axios';
 import { useParams } from "react-router-dom";
+//si aici trebuie sa schimbt tot
 
-const PokemonPage = ({ details }) => {
+//over all am pierdut super mult timp incercand sa inteleg de ce nu merge pagina asta dar este oke ca am invatat alte chestii 
+const PokemonPage = ({ match }) => {
     const [pokemonDetails, setPokemonDetails] = useState();
 
-    const { id } = useParams();
-    // const id = match.params.id;
+    // const { id } = useParams();
+    const id = match.params.id;
 
     const getPokemon = async (id) => {
         const details = await getPokemonData(id);
@@ -41,6 +43,16 @@ const PokemonPage = ({ details }) => {
                         name={pokemonDetails.data.name}
                         type={pokemonDetails.data.types[0].type.name}
                     />
+
+                    {/* la pokemon types ma gandeam sa fac ceva de genul {pokemonDetails.types.map(t => (
+                                            <div key={t.type.name}>
+                                                <div className={`${t.type.name}`} >
+                                                    {t.type.name.toUpperCase()}
+                                                </div>
+                                            </div>
+                                        ))} */}
+
+                    {/* sprites container si trivia container trebuie refacut pentru urmatoarea ora */}
                     <PokemonTriviaContainer />
                 </div>
                 <div class="pokemon-content-lower">
