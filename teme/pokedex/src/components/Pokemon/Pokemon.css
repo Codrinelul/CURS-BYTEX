@@ -21,7 +21,7 @@
 
 html {
   --pokename: #000;
-  --cardborder: #fff;
+  --cardborder: rgba(128, 128, 128, 0.671);
   --pokenumber: hsl(228, 28%, 20%);
   --info: #fff;
 }
@@ -40,7 +40,7 @@ html[data-theme="dark"] {
   justify-content: space-between;
   /* padding: 1.5rem 0; */
   margin: 2rem;
-  outline-style: solid;
+  /* outline-style: solid; */
   /* border: 15px solid var(--cardborder); */
   border-radius: 1rem;
   min-width: 220px;
