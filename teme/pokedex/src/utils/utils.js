@@ -5,58 +5,58 @@ export const colorTypeGradients = (type1, type2, length) => {
 
     switch (type1) {
         case "grass":
-            color1 = "#a8ff98";
+            color1 = "#65995b";
             break;
         case "poison":
-            color1 = "#d6a2e4";
+            color1 = "#9671a0";
             break;
         case "normal":
-            color1 = "#dcdcdc";
+            color1 = "#b0b0b0";
             break;
         case "fire":
-            color1 = "#ffb971";
+            color1 = "#cc945a";
             break;
         case "water":
-            color1 = "#8cc4e2";
+            color1 = "#709db5";
             break;
         case "electric":
-            color1 = "#ffe662";
+            color1 = "#ccb84e";
             break;
         case "ice":
-            color1 = "#8cf5e4";
+            color1 = "#7eddcd";
             break;
         case "fighting":
-            color1 = "#da7589";
+            color1 = "#de8395";
             break;
         case "ground":
-            color1 = "#e69a74";
+            color1 = "#cf8b68";
             break;
         case "flying":
-            color1 = "#bbc9e4";
+            color1 = "#c2cee7";
             break;
         case "psychic":
-            color1 = "#ffa5da";
+            color1 = "#e695c4";
             break;
         case "bug":
-            color1 = "#bae05f";
+            color1 = "#a7ca56";
             break;
         case "rock":
-            color1 = "#C9BB8A";
+            color1 = "#b5a87c";
             break;
         case "ghost":
-            color1 = "#8291e0";
+            color1 = "#6874b3";
             break;
         case "dark":
-            color1 = "#8e8c94";
+            color1 = "#636268";
             break;
         case "dragon":
-            color1 = "#88a2e8";
+            color1 = "#7a92d1";
             break;
         case "steel":
-            color1 = "#9fb8b9";
+            color1 = "#7f9394";
             break;
         case "fairy":
-            color1 = "#fdb9e9";
+            color1 = "#fdc0eb";
             break;
         default:
             color1 = "gainsboro";
@@ -67,58 +67,58 @@ export const colorTypeGradients = (type1, type2, length) => {
 
         switch (type2) {
             case "grass":
-                color2 = "#a8ff98";
+                color2 = "#b1ffa2";
                 break;
             case "poison":
-                color2 = "#d6a2e4";
+                color2 = "#c192cd";
                 break;
             case "normal":
-                color2 = "#dcdcdc";
+                color2 = "#e0e0e0";
                 break;
             case "fire":
-                color2 = "#ffb971";
+                color2 = "#e6a766";
                 break;
             case "water":
-                color2 = "#8cc4e2";
+                color2 = "#709db5";
                 break;
             case "electric":
-                color2 = "#ffe662";
+                color2 = "#ffe972";
                 break;
             case "ice":
-                color2 = "#8cf5e4";
+                color2 = "#7eddcd";
                 break;
             case "fighting":
-                color2 = "#da7589";
+                color2 = "#ae5e6e";
                 break;
             case "ground":
-                color2 = "#e69a74";
+                color2 = "#b87b5d";
                 break;
             case "flying":
-                color2 = "#bbc9e4";
+                color2 = "#c9d4e9";
                 break;
             case "psychic":
-                color2 = "#ffa5da";
+                color2 = "#e695c4";
                 break;
             case "bug":
-                color2 = "#bae05f";
+                color2 = "#a7ca56";
                 break;
             case "rock":
-                color2 = "#C9BB8A";
+                color2 = "#b5a87c";
                 break;
             case "ghost":
-                color2 = "#8291e0";
+                color2 = "#8f9ce3";
                 break;
             case "dark":
-                color2 = "#8e8c94";
+                color2 = "#727076";
                 break;
             case "dragon":
-                color2 = "#88a2e8";
+                color2 = "#6d82ba";
                 break;
             case "steel":
-                color2 = "#9fb8b9";
+                color2 = "#8fa6a7";
                 break;
             case "fairy":
-                color2 = "#fdb9e9";
+                color2 = "#ca94ba";
                 break;
             default:
                 color2 = "gainsboro";
@@ -128,7 +128,7 @@ export const colorTypeGradients = (type1, type2, length) => {
         color2 = color1;
     }
 
-    const finalColor = [color1,color2];
+    const finalColor = [color1, color2];
 
     return finalColor;
 
