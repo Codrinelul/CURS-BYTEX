@@ -9,6 +9,9 @@ import Loading from './components/Loading/Loading'
 import Filters from './components/Filters/Filters'
 import { motion } from "framer-motion"
 
+
+//urmeaza sa pun mai multe filtre pentru selectat pokemoni
+
 const list = {
     visible: {
         opacity: 1,
@@ -79,7 +82,7 @@ class App extends React.Component {
     componentDidMount() {
         this.getAllPokemons(this.state.offset, this.state.limit);
         const currentTheme = document.documentElement.getAttribute('data-theme');
-        if (currentTheme === "light") {
+        if (currentTheme === "dark") {
             this.setState({
                 isChecked: true,
             })
@@ -438,8 +441,8 @@ class App extends React.Component {
                             evolutionPokemon={this.fetchPokemonData}>
                         </InfoDialog>}
                     <Header />
+                    {/* urmeaza sa mai pun filtre acum inteleg cum */}
                     <Filters
-
                         valuetype={this.state.valuetype}
                         sorttype={this.state.sorttype}
                         valuesearch={this.state.valuesearch}
@@ -501,9 +504,7 @@ class App extends React.Component {
                             }
                         </div>
                     </div>
-                    {this.state.noDataFound && <div className="no__data noselect">
-                        No such Pokémon in this region :/
-                    </div>}
+
                     <Footer />
                 </div>}
             </>
