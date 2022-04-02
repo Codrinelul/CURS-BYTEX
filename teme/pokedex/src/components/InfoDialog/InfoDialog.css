@@ -3,7 +3,7 @@ html {
   --cardborder: #fff;
   --pokenumber: hsl(228, 28%, 20%);
   --info: #fff;
-  --bggradient: url("./bg.png");
+
   --bgcolor: none;
 }
 
@@ -12,7 +12,7 @@ html[data-theme="dark"] {
   --cardborder: hsl(228, 28%, 20%);
   --pokenumber: hsl(228, 28%, 20%);
   --info: hsl(228, 28%, 20%);
-  --bggradient: none;
+
   --bgcolor: #16171f;
 }
 
@@ -117,11 +117,6 @@ html[data-theme="dark"] {
     0 6px 6px rgba(0, 0, 0, 0.43);
 }
 
-.MuiDialog-container {
-  background-color: var(--bgcolor);
-  background-image: var(--bggradient);
-}
-
 .MuiBackdrop-root {
   background-color: rgba(0, 0, 0, 0);
 }
@@ -137,8 +132,7 @@ html[data-theme="dark"] {
 }
 
 .dialog__bg {
-  background-image: url("./bg.png");
-  background-repeat: repeat;
+  background-color: rgba(82, 82, 82, 0.548);
 }
 
 .dialog__content {

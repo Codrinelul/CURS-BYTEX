@@ -408,9 +408,11 @@ class App extends React.Component {
             valuetype: event.target.value,
         })
 
+
         filterArr.length === 0 ? this.setState({ noDataFound: true }) : this.setState({ noDataFound: false })
 
     }
+
 
     handleClick = () => {
         window[`scrollTo`]({ top: document.body.scrollHeight, behavior: `smooth` })
