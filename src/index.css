@@ -316,7 +316,8 @@ select {
   }
   select,
   .filter__items > input {
-    width: 40vw;
+    width: 70vw;
+    height: 35px;
   }
   .app__header{
     display: flex;
