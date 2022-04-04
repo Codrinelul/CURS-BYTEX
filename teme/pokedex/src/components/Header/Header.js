@@ -27,6 +27,7 @@ class Header extends React.Component {
         document.documentElement.setAttribute('data-theme', targetTheme)
     }
 
+
     render() {
         return (
             <>
