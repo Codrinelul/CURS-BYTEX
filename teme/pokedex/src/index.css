@@ -298,19 +298,36 @@ select {
     width: 35%;
   }
   .poke__logo {
-    width: 35vw;
+    width: 67vw;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    -webkit-filter: drop-shadow(5px 0px 0px rgba(0, 0, 0, 0.6));
+    filter: drop-shadow(5px 0px 0px rgba(0, 0, 0, 0.6));
   }
   .filter__container {
     display: flex;
     flex-direction: column;
     width: 100vw;
     align-items: center;
-    margin: 7vh 0 5vh 0;
+    margin: 2vh 0 2vh 0;
     gap: 2vh 2vw;
     justify-content: center;
   }
   select,
   .filter__items > input {
     width: 40vw;
+  }
+  .app__header{
+    display: flex;
+    align-items: center;
+    justify-content: space;
+    flex-direction: column;
+    width: -webkit-fill-available;
+    width: -moz-available;
+    margin-top: 5vh;
+  }
+  .switch{
+    width:auto;
   }
 }

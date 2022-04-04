@@ -36,10 +36,8 @@ class Header extends React.Component {
 
                     <div className="poke__logos noselect">
                         <img src={Pokedex} alt="pokelogo" className="poke__logo" />
-
                     </div>
                     <div className="switch">
-
                         <div className="toggle">
                             <label htmlFor="themeSwitch"></label>
                             <input type="checkbox" name="swich-theme" id="themeSwitch" onClick={this.changeTheme} defaultChecked />
@@ -47,8 +45,6 @@ class Header extends React.Component {
                             <div className="toggle-thumb">
                                 <i className="fas fa-sun"></i>
                                 <i className="fas fa-moon"></i>
-
-
                             </div>
                         </div>
                     </div>
