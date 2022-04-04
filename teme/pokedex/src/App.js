@@ -286,31 +286,7 @@ class App extends React.Component {
         // console.log("description");
     }
 
-    handleChangeRegions = (event) => {
 
-        // debugger
-
-        for (let i = 0; i < this.state.regions.length; i++) {
-            if (this.state.regions[i].name === event.target.value) {
-
-                this.setState({
-                    valueregion: event.target.value,
-                    // valuetype: "all types",
-                    sorttype: "ID",
-                    isSearch: false,
-                    isFilter: false,
-                    showLoading: true,
-                })
-
-                this.getAllPokemons(this.state.regions[i].offset, this.state.regions[i].limit);
-
-                break;
-            }
-        }
-
-        // console.log("limit");
-        // console.log(event.target.value);
-    }
 
     handleChangeSearch = (event) => {
 

@@ -172,16 +172,19 @@ body {
 }
 
 .filter__items > input {
-  width: 10vw;
+  width: 15vw;
   margin-top: 5px;
   background-color: var(--selectBg);
   color: var(--selectText);
   border: 1px solid var(--selectText);
+  border-radius:5px;
+  height: 20px;
 }
 
 select {
-  width: 10vw;
+  width: 15vw;
   margin-top: 5px;
+  border-radius:5px;
 }
 
 .switch {
@@ -286,6 +289,8 @@ a {
 select {
   color: var(--selectText);
   background-color: var(--selectBg);
+  height: 25px;
+
 }
 
 @media screen and (max-width: 767px) {
