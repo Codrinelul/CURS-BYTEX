@@ -29,7 +29,7 @@ You can see it live [here](https://codsan.me)💻
 - Run `npm install` and `npm start`
 - The application opens in `http://localhost:3000/` or any other available port
 
-## To-do
+## To-do (from here is for future me)
 
 - Include some more Pokémon data - strengths, weaknesses, moves
 - Complex evolution chains (Eevee and the likes)
@@ -47,6 +47,8 @@ You can see it live [here](https://codsan.me)💻
 - [React curse 2](https://www.youtube.com/watch?v=bMknfKXIFA8)
 - [Book](https://github.com/getify/You-Dont-Know-JS)
 - [Javascript MDN](https://developer.mozilla.org/en-US/)
+- [YouTube Tutorial 1](https://www.youtube.com/watch?v=CZBWT7MQYr0)
+- [YouTube Tutorial 2](https://www.youtube.com/watch?v=A5SpI1fVfvU&t=64s) -[YouTube Tutorial 3](https://www.youtube.com/watch?v=XehSJF85F38&t=2457s)
 
 ## Thanks to
 
