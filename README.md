@@ -51,4 +51,4 @@ You can see it live [here](https://codsan.me)💻
 
 - the trainers from Bytex Romania: Razvan Borsan & Stefan Tomsa
 
-- 03/2022
+03/2022
