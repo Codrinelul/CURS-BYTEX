@@ -45,7 +45,9 @@ You can see it live [here](https://codsan.me)💻
 - [Material-Ui](https://www.youtube.com/watch?v=vyJU9efvUtQ)
 - [React curse 1](https://www.udemy.com/course/complete-react-developer-zero-to-mastery/)
 - [React curse 2](https://www.youtube.com/watch?v=bMknfKXIFA8)
-- [Book](https://github.com/getify/You-Dont-Know-JS) -[Javascript MDN](https://developer.mozilla.org/en-US/)
+- [Book](https://github.com/getify/You-Dont-Know-JS)
+
+  -[Javascript MDN](https://developer.mozilla.org/en-US/)
 
 ## Thanks to
 
