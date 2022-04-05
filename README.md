@@ -48,7 +48,8 @@ You can see it live [here](https://codsan.me)💻
 - [Book](https://github.com/getify/You-Dont-Know-JS)
 - [Javascript MDN](https://developer.mozilla.org/en-US/)
 - [YouTube Tutorial 1](https://www.youtube.com/watch?v=CZBWT7MQYr0)
-- [YouTube Tutorial 2](https://www.youtube.com/watch?v=A5SpI1fVfvU&t=64s) -[YouTube Tutorial 3](https://www.youtube.com/watch?v=XehSJF85F38&t=2457s)
+- [YouTube Tutorial 2](https://www.youtube.com/watch?v=A5SpI1fVfvU&t=64s)
+- [YouTube Tutorial 3](https://www.youtube.com/watch?v=XehSJF85F38&t=2457s)
 
 ## Thanks to
 
