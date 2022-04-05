@@ -1,0 +1,20 @@
+.loading__gif {
+    width: 15%;
+  }
+  .gif__container {
+    text-align: center;
+  }
+  .loading__text {
+    font-family: "Press Start 2P", cursive;
+    color: var(--colorPrimary);
+  }
+
+@media screen and (max-width: 767px) {
+    .loading__gif {
+      width: 35%;
+    }
+    
+  
+    
+    
+  }

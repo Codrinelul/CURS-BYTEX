@@ -35,14 +35,7 @@ body {
   transition: background 1s ease;
 }
 
-.poke__logo {
-  margin-top: 10px;
-  margin-left: 50px;
-  width: 15vw;
-  max-width: 300px;
-  -webkit-filter: drop-shadow(5px 0px 0px rgba(0, 0, 0, 0.6));
-  filter: drop-shadow(5px 0px 0px rgba(0, 0, 0, 0.6));
-}
+
 .App{
   display: flex;
   align-items: center;
@@ -58,14 +51,12 @@ body {
 align-self: center;
 }
 
-.app__container .loading__text {
+.app__container {
   font-family: "Press Start 2P", cursive;
   color: var(--colorPrimary);
 }
 
-.gif__container {
-  text-align: center;
-}
+
 
 .pokemon__container {
   display: flex;
@@ -111,19 +102,9 @@ align-self: center;
   text-transform: capitalize;
 }
 
-.app__header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: row;
-  width: -webkit-fill-available;
-  width: -moz-available;
-  margin-top: 5vh;
-}
 
-.loading__gif {
-  width: 15%;
-}
+
+
 
 .pokeball__box {
   display: flex;
@@ -131,175 +112,13 @@ align-self: center;
   margin-right: 20px;
 }
 
-.poke__logos {
-  display: flex;
-  flex-direction: column;
-  margin-left: 10px;
-}
 
-.app__footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-  text-align: center;
-  font-family: "Press Start 2P", cursive;
-  font-size: 10px;
-}
 
 .no__data {
   font-family: "Press Start 2P", cursive;
   font-size: 10px;
   text-align: center;
   color: var(--colorPrimary);
-}
-
-.app__footer > :nth-child(1) {
-  margin-top: 20px;
-}
-
-.app__footer > :nth-child(2) {
-  margin-bottom: 20px;
-}
-
-.filter__container {
-  display: flex;
-  flex-direction: row;
-  margin: 7vh 0 5vh 0;
-  gap: 0 2vw;
-}
-
-.filter__items {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: "barcadebrawl";
-  font-size: 12px;
-}
-
-.filter__items > input {
-   min-width: 220px;
-  margin-top: 5px;
-  background-color: var(--selectBg);
-  color: var(--selectText);
-  border: 1px solid var(--selectText);
-  border-radius:20px;
-  height: 30px;
-  font-family: "barcadebrawl";
-  font-weight: 400;
-  font-size: 12px;
-  text-align: center;
-
-}
-
-select {
-   min-width: 220px;
-  margin-top: 5px;
-  border-radius:5px;
-  background-color: var(--selectBg);
-  color: var(--selectText);
-  border: 1px solid var(--selectText);
-  border-radius:20px;
-  height: 34px;
-  font-family: "barcadebrawl";
-  font-weight: 400;
-  font-size: 12px;
-padding: 1px 2px;
-text-align: center;
-display: flex;
-align-items: center;
-align-self: center;
-}
-
-.switch {
-  display: flex;
-  align-items: center;
-}
-
-.switch .label {
-  flex: 1;
-  line-height: 30px;
-}
-
-.switch .toggle {
-  position: relative;
-}
-
-.switch .toggle label {
-  position: absolute;
-  display: inline-block;
-  width: 65px;
-  height: 30px;
-  z-index: 1;
-  border-radius: inherit;
-  cursor: pointer;
-}
-
-.switch .toggle input {
-  display: none;
-}
-
-.switch .toggle-bg {
-  margin-left: auto;
-  width: 65px;
-  height: 30px;
-  border-radius: 30px;
-  background: var(--toggle);
-}
-
-.switch .toggle-thumb {
-  position: absolute;
-  top: 2px;
-  left: 3px;
-}
-
-.switch .toggle-thumb i {
-  color: var(--textPri);
-  font-size: 1.1rem;
-  padding: 0.25rem;
-  border-radius: 50%;
-  background: var(--mainBg);
-  box-shadow: inset 0 0 7px var(--cardBg);
-}
-
-.switch .toggle-thumb .fa-sun {
-  opacity: 0;
-  z-index: 1;
-  transform: translateX(1px);
-  transition: all 0.5s;
-}
-
-.switch .toggle-thumb .fa-moon {
-  opacity: 1;
-  transform: translateX(-30px);
-  transition: all 0.55s;
-}
-
-.switch .toggle input[type="checkbox"]:checked ~ .toggle-thumb .fa-sun {
-  opacity: 1;
-  z-index: -1;
-  transform: translateX(34px);
-}
-
-.switch .toggle input[type="checkbox"]:checked ~ .toggle-thumb .fa-moon {
-  opacity: 0;
-  transform: translateX(4px);
-}
-
-.filter__items > div,
-label {
-  color: var(--filterHeading);
-}
-
-.switch {
-  
-  margin: 0 6vw;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
 }
 
 .noselect {
@@ -317,42 +136,3 @@ a {
   
 } */
 
-@media screen and (max-width: 767px) {
-  .loading__gif {
-    width: 35%;
-  }
-  .poke__logo {
-    width: 67vw;
-    margin-top: 5px;
-    margin-bottom: 30px;
-    margin-left: auto;
-    -webkit-filter: drop-shadow(5px 0px 0px rgba(0, 0, 0, 0.6));
-    filter: drop-shadow(5px 0px 0px rgba(0, 0, 0, 0.6));
-  }
-  .filter__container {
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    align-items: center;
-    margin: 2vh 0 2vh 0;
-    gap: 2vh 2vw;
-    justify-content: center;
-  }
-  select,
-  .filter__items > input {
-    width: 70vw;
-    height: 35px;
-  }
-  .app__header{
-    display: flex;
-    align-items: center;
-    justify-content: space;
-    flex-direction: column;
-    width: -webkit-fill-available;
-    width: -moz-available;
-    margin-top: 5vh;
-  }
-  .switch{
-    width:auto;
-  }
-}

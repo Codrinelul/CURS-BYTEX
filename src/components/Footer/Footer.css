@@ -1,0 +1,29 @@
+.app__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    text-align: center;
+    font-family: "Press Start 2P", cursive;
+    font-size: 10px;
+  }
+  
+.app__footer > :nth-child(1) {
+    margin-top: 20px;
+  }
+  
+.app__footer > :nth-child(2) {
+    margin-bottom: 20px;
+  }
+  
+  
+  
+  
+  
+  
+a {
+    color: inherit;
+    text-decoration: none;
+  }
+  

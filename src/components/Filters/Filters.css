@@ -1,0 +1,73 @@
+.filter__container {
+    display: flex;
+    flex-direction: row;
+    margin: 7vh 0 5vh 0;
+    gap: 0 2vw;
+  }
+  
+.filter__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "barcadebrawl";
+    font-size: 12px;
+  }
+  
+  .filter__items > input {
+     min-width: 220px;
+    margin-top: 5px;
+    background-color: var(--selectBg);
+    color: var(--selectText);
+    border: 1px solid var(--selectText);
+    border-radius:20px;
+    height: 30px;
+    font-family: "barcadebrawl";
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+  
+  }
+  
+  select {
+     min-width: 220px;
+    margin-top: 5px;
+    border-radius:5px;
+    background-color: var(--selectBg);
+    color: var(--selectText);
+    border: 1px solid var(--selectText);
+    border-radius:20px;
+    height: 34px;
+    font-family: "barcadebrawl";
+    font-weight: 400;
+    font-size: 12px;
+  padding: 1px 2px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  align-self: center;
+  }
+  
+  
+  
+  .filter__items > div,
+  label {
+    color: var(--filterHeading);
+  }
+
+
+  @media screen and (max-width:767px){
+    .filter__container {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        align-items: center;
+        margin: 2vh 0 2vh 0;
+        gap: 2vh 2vw;
+        justify-content: center;
+      }
+      select,
+      .filter__items > input {
+        width: 70vw;
+        height: 35px;
+      }
+  }

@@ -1,6 +1,6 @@
 import React from 'react';
 import Pokedex from "./pokedex.png";
-
+import "./Header.css";
 class Header extends React.Component {
 
     changeTheme = () => {
