@@ -49,6 +49,8 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  max-width: 2160px;
+
 }
 
 .app__container .loading__text {
@@ -172,19 +174,34 @@ body {
 }
 
 .filter__items > input {
-  width: 15vw;
+   min-width: 220px;
   margin-top: 5px;
   background-color: var(--selectBg);
   color: var(--selectText);
   border: 1px solid var(--selectText);
-  border-radius:5px;
-  height: 20px;
+  border-radius:20px;
+  height: 30px;
+  font-family: "barcadebrawl";
+  font-weight: 400;
+  font-size: 12px;
+  text-align: center;
+
 }
 
 select {
-  width: 15vw;
+   min-width: 220px;
   margin-top: 5px;
   border-radius:5px;
+  background-color: var(--selectBg);
+  color: var(--selectText);
+  border: 1px solid var(--selectText);
+  border-radius:20px;
+  height: 34px;
+  font-family: "barcadebrawl";
+  font-weight: 400;
+  font-size: 12px;
+padding: 1px 2px;
+text-align: center;
 }
 
 .switch {
@@ -286,12 +303,11 @@ a {
   user-select: none;
 }
 
-select {
+/* select {
   color: var(--selectText);
   background-color: var(--selectBg);
-  height: 25px;
-
-}
+  
+} */
 
 @media screen and (max-width: 767px) {
   .loading__gif {
