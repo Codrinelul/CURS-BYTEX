@@ -27,6 +27,7 @@ html[data-theme="dark"] {
   flex-direction: column;
   width: 100%;
   margin-left: 40px;
+  margin-top:20px;
 }
 
 .info__container__img {
@@ -112,6 +113,7 @@ html[data-theme="dark"] {
 
 .MuiDialog-paperFullWidth {
   width: 63%;
+  max-width: 753px;
   border-radius: 1rem;
   box-shadow: 0 10px 20px rgba(175, 136, 136, 0.29),
     0 6px 6px rgba(0, 0, 0, 0.43);
@@ -172,6 +174,13 @@ html[data-theme="dark"] {
 .evolution__box {
   display: flex;
   gap: 0 0px;
+  position: relative;
+  top: -15px;
+}
+
+.evo{
+  position: relative;
+  bottom:-5px;
 }
 
 .evolution__sub__box {

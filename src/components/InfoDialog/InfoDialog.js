@@ -100,7 +100,7 @@ export default function InfoDialog(props) {
                                         </div>
                                     </div>
                                     <div>
-                                        <div className="info__container__headings">Evolution</div>
+                                        <div className="info__container__headings evo">Evolution</div>
                                         <div className="evolution__box">
                                             {props.evoChain.map((value, index, elements) =>
                                                 <Delayed waitBeforeShow={(index + 0) * 800} key={elements[index].species_name}>
