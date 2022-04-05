@@ -399,7 +399,7 @@ class App extends React.Component {
             <>
                 <Scroll showBelow={250} className="scroll__top" />
                 {this.state.showLoading && <Loading />}
-                {!this.state.showLoading && <div className="app__container">
+                {!this.state.showLoading && <div className="App"> <div className="app__container">
                     {this.state.showInfo &&
                         <InfoDialog
                             open={this.state.showInfo}
@@ -484,6 +484,7 @@ class App extends React.Component {
                     </div>
 
                     <Footer />
+                </div>
                 </div>}
             </>
         )

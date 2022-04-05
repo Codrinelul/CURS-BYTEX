@@ -39,10 +39,15 @@ body {
   margin-top: 10px;
   margin-left: 50px;
   width: 15vw;
+  max-width: 300px;
   -webkit-filter: drop-shadow(5px 0px 0px rgba(0, 0, 0, 0.6));
   filter: drop-shadow(5px 0px 0px rgba(0, 0, 0, 0.6));
 }
-
+.App{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .app__container {
   display: flex;
   flex-direction: column;
@@ -50,7 +55,7 @@ body {
   justify-content: center;
   min-height: 100vh;
   max-width: 2160px;
-
+align-self: center;
 }
 
 .app__container .loading__text {
@@ -285,7 +290,7 @@ label {
 }
 
 .switch {
-  width: 5vw;
+  
   margin: 0 6vw;
 }
 

@@ -21,6 +21,7 @@ class Filters extends React.Component {
                         <div>
                             Type
                         </div>
+
                         <select value={this.props.valuetype} onChange={this.props.typesSelect}>
                             {this.props.types.map((type) => (
                                 <option
