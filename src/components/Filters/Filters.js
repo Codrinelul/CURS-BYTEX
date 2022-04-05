@@ -22,7 +22,16 @@ class Filters extends React.Component {
                             Type
                         </div>
 
-                        <select value={this.props.valuetype} onChange={this.props.typesSelect}>
+                        <select
+                            sx={{
+                                '& MuiNativeSelect-Standard': {
+                                    position: "relative",
+                                    top: "-15px",
+                                }
+                            }}
+                            value={this.props.valuetype}
+                            onChange={this.props.typesSelect}
+                        >
                             {this.props.types.map((type) => (
                                 <option
                                     key={type}
