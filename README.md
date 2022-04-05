@@ -19,9 +19,9 @@ You can see it live [here](https://codsan.me)💻
 
 ## Built With
 
-- React⚛️
-- Material-UI🎨
-- PokéAPI💾
+- [React⚛️](https://reactjs.org/)
+- [Material-UI🎨](https://mui.com/)
+- [PokéAPI💾](https://pokeapi.co/docs/v2)
 
 ## Run locally
 
