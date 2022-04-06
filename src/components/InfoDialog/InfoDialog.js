@@ -3,6 +3,7 @@ import { withStyles } from '@material-ui/core/styles';
 import Dialog from '@material-ui/core/Dialog';
 import MuiDialogContent from '@material-ui/core/DialogContent';
 import { StylesProvider } from "@material-ui/core/styles";
+import { styled } from "@mui/material/styles";
 import './InfoDialog.css';
 import ArrowRightAltIcon from '@material-ui/icons/ArrowRightAlt';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
@@ -12,6 +13,10 @@ import { colorTypeGradients } from '../../utils/utils';
 import Tooltip from '@material-ui/core/Tooltip';
 import Zoom from '@material-ui/core/Zoom';
 import { motion } from "framer-motion"
+import LinearProgress, {
+    linearProgressClasses
+} from "@mui/material/LinearProgress";
+import { padding } from '@mui/system';
 
 const DialogContent = withStyles((theme) => ({
     root: {
@@ -19,7 +24,20 @@ const DialogContent = withStyles((theme) => ({
     },
 }))(MuiDialogContent);
 
+const BorderLinearProgress = styled(LinearProgress)(({ theme }) => ({
+    height: 12,
+    borderRadius: 5,
+    marginBottom: 7,
+    [`&.${linearProgressClasses.colorPrimary}`]: {
+        backgroundColor:
+            theme.palette.grey[theme.palette.mode === "light" ? "#0EA77D" : "#0EA77D"]
+    },
+    [`& .${linearProgressClasses.bar}`]: {
+        borderRadius: 5,
+        backgroundColor: theme.palette.mode === "light" ? "#ed143d" : "#ed143d"
 
+    }
+}));
 
 export default function InfoDialog(props) {
 
@@ -95,6 +113,7 @@ export default function InfoDialog(props) {
                                                 <div key={stat['stat__name']} className="info__container__stat__columns">
                                                     <div className="info__container__stat__columns__name">{stat['stat__name']}</div>
                                                     <div className="info__container__stat__columns__val">{stat['stat__val']}</div>
+                                                    <BorderLinearProgress variant="determinate" value={stat['stat__val']} />
                                                 </div>
                                             )}
                                         </div>
