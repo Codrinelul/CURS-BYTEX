@@ -35,11 +35,6 @@ You can see it live [here](https://codsan.me)💻
 - Complex evolution chains (Eevee and the likes)
 - Router for Pokemon details
 
-## Credits
-
-- [Scroll to top](https://juliapottinger.com/react-gatsby-scroll-to-top/)
-- [Beautiful icons of Pokemon types](https://github.com/duiker101/pokemon-type-svg-icons)
-
 ## Tutorial and courses
 
 - [React course: zero to mastery (Udemy)](https://www.udemy.com/course/complete-react-developer-zero-to-mastery/)
@@ -49,7 +44,8 @@ You can see it live [here](https://codsan.me)💻
 - [Documentation: Javascript MDN](https://developer.mozilla.org/en-US/)
 - [Documentation: react router](https://v5.reactrouter.com/web/guides/quick-start)
 - [Documentation: MUI](https://mui.com/getting-started/installation/)
-
+- [Scroll to top](https://juliapottinger.com/react-gatsby-scroll-to-top/)
+- [Beautiful icons of Pokemon types](https://github.com/duiker101/pokemon-type-svg-icons)
 - [Material-Ui](https://www.youtube.com/watch?v=vyJU9efvUtQ)
 - [YouTube Tutorial: Hooks](https://www.youtube.com/watch?v=CZBWT7MQYr0)
 - [YouTube Tutorial: Axios](https://www.youtube.com/watch?v=A5SpI1fVfvU&t=64s)
