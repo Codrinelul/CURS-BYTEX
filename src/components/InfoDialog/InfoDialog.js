@@ -16,7 +16,7 @@ import { motion } from "framer-motion"
 import LinearProgress, {
     linearProgressClasses
 } from "@mui/material/LinearProgress";
-import { padding } from '@mui/system';
+
 
 const DialogContent = withStyles((theme) => ({
     root: {
