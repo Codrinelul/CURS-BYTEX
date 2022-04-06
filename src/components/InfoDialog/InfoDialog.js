@@ -144,7 +144,7 @@ export default function InfoDialog(props) {
                                                                             className="evo_img"
                                                                             onClick={() => props.evolutionPokemon(props.number, elements[index].species_name, props.category, elements[index].image_url)}
                                                                         />
-                                                                        {/* <img src={elements[index].image_url} className="evo_img" /> */}
+
                                                                     </div>
                                                                 </div>
                                                             </motion.div>

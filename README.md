@@ -42,14 +42,18 @@ You can see it live [here](https://codsan.me)💻
 
 ## Tutorial and courses
 
+- [React course: zero to mastery (Udemy)](https://www.udemy.com/course/complete-react-developer-zero-to-mastery/)
+- [React course: freeCodeCamp (YouTube)](https://www.youtube.com/watch?v=bMknfKXIFA8)
+- [Book: You Dont Know JS](https://github.com/getify/You-Dont-Know-JS)
+- [Book: road to react](https://www.roadtoreact.com/)
+- [Documentation: Javascript MDN](https://developer.mozilla.org/en-US/)
+- [Documentation: react router](https://v5.reactrouter.com/web/guides/quick-start)
+- [Documentation: MUI](https://mui.com/getting-started/installation/)
+
 - [Material-Ui](https://www.youtube.com/watch?v=vyJU9efvUtQ)
-- [React curse 1](https://www.udemy.com/course/complete-react-developer-zero-to-mastery/)
-- [React curse 2](https://www.youtube.com/watch?v=bMknfKXIFA8)
-- [Book](https://github.com/getify/You-Dont-Know-JS)
-- [Javascript MDN](https://developer.mozilla.org/en-US/)
-- [YouTube Tutorial 1](https://www.youtube.com/watch?v=CZBWT7MQYr0)
-- [YouTube Tutorial 2](https://www.youtube.com/watch?v=A5SpI1fVfvU&t=64s)
-- [YouTube Tutorial 3](https://www.youtube.com/watch?v=XehSJF85F38&t=2457s)
+- [YouTube Tutorial: Hooks](https://www.youtube.com/watch?v=CZBWT7MQYr0)
+- [YouTube Tutorial: Axios](https://www.youtube.com/watch?v=A5SpI1fVfvU&t=64s)
+- [YouTube Tutorial: API](https://www.youtube.com/watch?v=XehSJF85F38&t=2457s)
 
 ## Thanks to
 
