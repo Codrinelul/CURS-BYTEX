@@ -8,7 +8,14 @@ import Footer from './components/Footer/Footer'
 import Loading from './components/Loading/Loading'
 import Filters from './components/Filters/Filters'
 import { motion } from "framer-motion"
-
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link,
+    useParams,
+    useRouteMatch
+} from "react-router-dom";
 
 //urmeaza sa pun mai multe filtre pentru selectat pokemoni
 
@@ -401,6 +408,7 @@ class App extends React.Component {
                 {this.state.showLoading && <Loading />}
                 {!this.state.showLoading && <div className="app__container">
                     {this.state.showInfo &&
+
                         <InfoDialog
                             open={this.state.showInfo}
                             abilities={this.state.abilities}
@@ -418,6 +426,7 @@ class App extends React.Component {
                             cancel={() => this.closeDialog()}
                             evolutionPokemon={this.fetchPokemonData}>
                         </InfoDialog>}
+
                     <Header />
                     {/* urmeaza sa mai pun filtre acum inteleg cum */}
                     <Filters

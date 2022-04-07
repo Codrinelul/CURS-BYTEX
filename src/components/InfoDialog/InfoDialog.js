@@ -110,11 +110,16 @@ export default function InfoDialog(props) {
                                         <div className="info__container__headings stats">Base Stats</div>
                                         <div className="info__container__data__data">
                                             {props.stats.map((stat) =>
-                                                <div key={stat['stat__name']} className="info__container__stat__columns">
-                                                    <div className="info__container__stat__columns__name">{stat['stat__name']}</div>
-                                                    <div className="info__container__stat__columns__val">{stat['stat__val']}</div>
-                                                    <BorderLinearProgress variant="determinate" value={stat['stat__val']} />
-                                                </div>
+                                                <motion.div
+                                                    whileHover={{ scale: 1.05 }}>
+                                                    <div key={stat['stat__name']} className="info__container__stat__columns">
+                                                        <div className="info__container__stat__columns__name">{stat['stat__name']}</div>
+                                                        <div className="info__container__stat__columns__val">{stat['stat__val']}</div>
+                                                        <BorderLinearProgress
+                                                            variant="determinate"
+                                                            value={stat['stat__val']} />
+                                                    </div>
+                                                </motion.div>
                                             )}
                                         </div>
                                     </div>
