@@ -9,12 +9,8 @@ import Loading from './components/Loading/Loading'
 import Filters from './components/Filters/Filters'
 import { motion } from "framer-motion"
 import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link,
-    useParams,
-    useRouteMatch
+    Routes,
+    Route
 } from "react-router-dom";
 
 //urmeaza sa pun mai multe filtre pentru selectat pokemoni
@@ -407,26 +403,28 @@ class App extends React.Component {
                 <Scroll showBelow={250} className="scroll__top" />
                 {this.state.showLoading && <Loading />}
                 {!this.state.showLoading && <div className="app__container">
-                    {this.state.showInfo &&
-
-                        <InfoDialog
-                            open={this.state.showInfo}
-                            abilities={this.state.abilities}
-                            height={this.state.height}
-                            weight={this.state.weight}
-                            category={this.state.category}
-                            genera={this.state.genera}
-                            genderRate={this.state.genderRate}
-                            stats={this.state.stats}
-                            img={this.state.imageURL}
-                            name={this.state.pokeName}
-                            number={this.state.pokeNumber}
-                            description={this.state.description}
-                            evoChain={this.state.evoChain}
-                            cancel={() => this.closeDialog()}
-                            evolutionPokemon={this.fetchPokemonData}>
-                        </InfoDialog>}
-
+                    <Routes>
+                        {this.state.showInfo &&
+                            <Route path="/pokemon/:id" element={<InfoDialog
+                                key={this.state.pokeNumber}
+                                open={this.state.showInfo}
+                                abilities={this.state.abilities}
+                                height={this.state.height}
+                                weight={this.state.weight}
+                                category={this.state.category}
+                                genera={this.state.genera}
+                                genderRate={this.state.genderRate}
+                                stats={this.state.stats}
+                                img={this.state.imageURL}
+                                name={this.state.pokeName}
+                                number={this.state.pokeNumber}
+                                description={this.state.description}
+                                evoChain={this.state.evoChain}
+                                cancel={() => this.closeDialog()}
+                                evolutionPokemon={this.fetchPokemonData}>
+                            </InfoDialog>} />
+                        }
+                    </Routes>
                     <Header />
                     {/* urmeaza sa mai pun filtre acum inteleg cum */}
                     <Filters
