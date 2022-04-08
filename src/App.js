@@ -428,7 +428,7 @@ class App extends React.Component {
                                 evolutionPokemon={this.fetchPokemonData}>
                             </InfoDialog>}
                         {/* /> */}
-                    }
+
                         {/* </Routes> */}
                         <Header />
                         {/* urmeaza sa mai pun filtre acum inteleg cum */}
